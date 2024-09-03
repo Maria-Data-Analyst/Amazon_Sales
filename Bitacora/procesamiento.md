@@ -98,6 +98,12 @@ De los resultados obtenidos, se observa que 1,347 registros muestran diferencias
 
 El análisis revela que la mayoría de las discrepancias son menores al 10%, lo que sugiere que, en general, el porcentaje de descuento promocionado se aplica de manera adecuada. Las diferencias menores al 10% podrían ser atribuibles a errores menores de captura o redondeo y no afectan significativamente la validez de los descuentos aplicados.
 
+### Separación de Categorías
+
+La variable `category` contiene múltiples categorías asociadas a cada producto, separadas por el símbolo `|`. Para facilitar el análisis, se han dividido estas categorías en tres columnas: `main_category`, `second_category` . Esta separación permite un análisis más claro y detallado de las categorías asociadas a cada producto.
+
+![image](https://github.com/user-attachments/assets/a8997cb2-5942-42d9-b125-7e7c0d6d7706)
+
 
 ## Tabla: `amazon_review`
 
@@ -128,7 +134,6 @@ El análisis revela que la mayoría de las discrepancias son menores al 10%, lo 
 
 En la tabla `amazon_review`, podemos observar que las variables contienen mucha información. A continuación, desglosaremos algunas variables para entender mejor los datos.
 
-### Variables:
 
 * **user_id**
   
@@ -198,12 +203,35 @@ Se buscaron y se identificaron los enlaces que no cumplen con esta estructura.
 
 Con estas dos estructuras definidas, podremos corregir todos los enlaces y asegurar que funcionen correctamente.
 
-## Valores Duplicados 
+## Valores Duplicados
+
+### 1. Identificación de Duplicados por `product_id`, `rating` y `rating_count`
+
+Primero, buscamos duplicados utilizando las columnas `product_id`, `rating`, y `rating_count` para identificar entradas que podrían estar registradas más de una vez con las mismas características.
+
+![Identificación de duplicados por product_id, rating y rating_count](https://github.com/user-attachments/assets/6d689bca-eb19-4586-9cd3-96160648ca0b)
+
+### 2. Eliminación de Duplicados
+
+Después de identificar los duplicados, procedemos a eliminarlos para mantener un único registro por cada producto, asegurando que los datos sean consistentes y precisos.
+
+![Eliminación de duplicados](https://github.com/user-attachments/assets/bd1c022a-8da0-4a97-b5d3-1d4b7af855e3)
+
+### 3. Búsqueda de Duplicados por `product_id` Únicamente
+
+A continuación, realizamos una búsqueda de duplicados considerando solo el `product_id`. Esto nos permite identificar si existen discrepancias en productos únicos que podrían tener diferentes características, como `rating` y `rating_count`.
+
+![Búsqueda de duplicados solo por product_id](https://github.com/user-attachments/assets/9a17803e-ea20-4f90-b978-9450f381098a)
+
+### 4. Resolución de Discrepancias
+
+Al observar los duplicados restantes, notamos que las diferencias entre ellos en `rating_count` son pequeñas, entre 1 y 3 votaciones. Para resolver estas discrepancias, decidimos mantener el registro con el mayor número de votaciones (`rating_count`) y eliminar los otros.
+
+![Resolución de discrepancias y eliminación de registros](https://github.com/user-attachments/assets/82f7f40d-f1ae-4d61-a8b3-4aa3716ac3eb)
 
 
+## Union de Tablas 
+Primero, descargamos los dos archivos limpios desde Google Colab y los subimos a BigQuery como tablas separadas. A continuación, realizamos un Inner Join entre estas tablas en BigQuery para combinar la información y obtener una tabla consolidada con datos completos. Esto nos permite visualizar y consultar los datos de manera más eficiente y completa.
 
-
-
-
-
+En el siguiente Notebook encontraras todos los procesos de limpieza realizados [Procesamiento con Python](
 
