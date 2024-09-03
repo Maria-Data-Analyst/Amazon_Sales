@@ -2,11 +2,11 @@
 
 En esta sección, detallaremos los pasos necesarios para el procesamiento y limpieza de los datos, con el objetivo de dejar las tablas preparadas para el análisis exploratorio.
 
-## Descripción de las Tablas y Variables
+* ## Descripción de las Tablas y Variables
 
 Antes de proceder al análisis, es crucial entender la estructura de los datos disponibles. A continuación, se describen las tablas `amazon_product` y `amazon_review` junto con sus respectivas variables:
 
-### Tabla: `amazon_product`
+* ### Tabla: `amazon_product`
 
 | **Variable**           | **Descripción**                               |
 |------------------------|-----------------------------------------------|
@@ -18,7 +18,7 @@ Antes de proceder al análisis, es crucial entender la estructura de los datos d
 | `discount_percentage`  | Porcentaje de descuento aplicado al producto  |
 | `about_product`        | Descripción detallada del producto            |
 
-### Tabla: `amazon_review`
+* ### Tabla: `amazon_review`
 
 | **Variable**           | **Descripción**                                               |
 |------------------------|---------------------------------------------------------------|
@@ -34,7 +34,7 @@ Antes de proceder al análisis, es crucial entender la estructura de los datos d
 | `rating_count`         | Número de personas que votaron por la calificación en Amazon  |
 
 
-## Limpieza de Datos
+* ## Limpieza de Datos
 
 Con una definición clara de las variables, podemos proceder a la limpieza de los datos. Comenzaremos por visualizar la tabla `amazon_product` para examinar los datos y detectar posibles inconsistencias o problemas que necesiten ser corregidos.
 
@@ -51,7 +51,7 @@ Podemos observar que las variables `discounted_price`, `actual_price` y `discoun
 ![Captura de pantalla 2024-09-02 125852](https://github.com/user-attachments/assets/dbdd540c-7466-43cf-a679-bd481195058e)
 
 
-### Valores Nulos
+* ### Valores Nulos
 
 Primero, hemos realizado una verificación de los valores nulos en el DataFrame.
 
@@ -66,7 +66,7 @@ Hemos identificado que los registros con valores nulos en el campo "about" corre
 ![image](https://github.com/user-attachments/assets/5c000cf1-5d7c-4a35-bb66-27c5a4bc9b8c)
 
 
-### Análisis de Valores Duplicados
+* ### Análisis de Valores Duplicados
 
 El siguiente paso es realizar un análisis exhaustivo para identificar y manejar los valores duplicados en el conjunto de datos. Este análisis debe enfocarse no solo en la variable `product_id`, sino también en otras variables relevantes como `discounted_price`, `actual_price` y `discount_percentage`. Este enfoque integral asegura que se detecten duplicados incluso cuando `product_id` sea único pero los precios y descuentos puedan variar.
 
@@ -80,6 +80,23 @@ A continuación, realizaremos un análisis adicional para identificar duplicados
 
 En esta fase, hemos observado que hay identificadores de producto iguales pero con valores diferentes en `actual_price`, `discounted_price` y `discount_percentage`. Como resultado, procederemos a eliminar todos los registros duplicados para asegurar que cada `product_id` tenga un solo conjunto de características coherentes.
 
+
+![image](https://github.com/user-attachments/assets/56e3d960-3802-4513-b544-ead1ab404340)
+
+
+### Análisis entre Precio Actual, Porcentaje de Descuento y Precio con Descuento
+
+Este análisis tiene como objetivo validar la exactitud de los datos de precios y descuentos. Se centra en verificar si el porcentaje de descuento promocionado se ha aplicado correctamente. Para ello, se calcula el porcentaje de descuento real y se compara con el porcentaje promocionado. Las diferencias en el porcentaje de descuento mayores al 10% se consideran significativas, ya que indican una discrepancia notable entre el descuento aplicado y el promocionado.
+
+**Resultados:**
+
+![image](https://github.com/user-attachments/assets/10d14941-9326-4147-a256-45ed6dc3337a)
+
+De los resultados obtenidos, se observa que 1,347 registros muestran diferencias en el porcentaje de descuento aplicado menores al 10%. Estas diferencias podrían deberse a aproximaciones o errores en la captura de datos. Sin embargo, dado que no se encuentran discrepancias del 10% o mayores, estas diferencias menores se consideran insignificantes para el análisis general.
+
+**Conclusión:**
+
+El análisis revela que la mayoría de las discrepancias son menores al 10%, lo que sugiere que, en general, el porcentaje de descuento promocionado se aplica de manera adecuada. Las diferencias menores al 10% podrían ser atribuibles a errores menores de captura o redondeo y no afectan significativamente la validez de los descuentos aplicados.
 
 
 
