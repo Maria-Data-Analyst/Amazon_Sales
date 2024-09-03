@@ -231,7 +231,9 @@ Al observar los duplicados restantes, notamos que las diferencias entre ellos en
 
 
 ## Union de Tablas 
-Primero, descargamos los dos archivos limpios desde Google Colab y los subimos a BigQuery como tablas separadas. A continuación, realizamos un Inner Join entre estas tablas en BigQuery para combinar la información y obtener una tabla consolidada con datos completos. Esto nos permite visualizar y consultar los datos de manera más eficiente y completa.
+Primero, descargamos los dos archivos limpios desde Google Colab y los subimos a BigQuery como tablas separadas. A continuación, realizamos un Inner Join entre estas tablas en BigQuery para combinar la información y obtener una tabla consolidada con datos completos. Esto nos permite visualizar y consultar los datos de manera más eficiente y completa en la siguiente sección.
+
+[Análisis Exploratorio](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/analisis_exploratorio.md)
 
 En el siguiente Notebook encontraras todos los procesos de limpieza realizados [Procesamiento con Python](
 
