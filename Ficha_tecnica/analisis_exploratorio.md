@@ -72,4 +72,6 @@ Este análisis nos sirve como base para validar o refutar las hipótesis plantea
   La correlación de -0.23 entre el descuento y el número de votaciones indica una relación inversa. Esto sugiere que un aumento en el descuento está asociado con una ligera disminución en el número de votaciones, aunque la relación es débil y el efecto es mínimo.
 
   
-  
+Para asegurar la validez de los resultados obtenidos, procederemos a aplicar técnicas adicionales de análisis, como la regresión lineal y pruebas de significancia. Estas técnicas permitirán una evaluación más rigurosa de nuestras hipótesis y ayudarán a confirmar o refutar las observaciones preliminares.
+
+[Tecnica de Análisis]
