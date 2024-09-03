@@ -170,14 +170,36 @@ La observación revela que 8 reseñas solo serían significativas en 63 producto
 
 ![image](https://github.com/user-attachments/assets/7a96b00c-418b-4dcd-9c6e-0d9ea1e91cff)
 
-Didbido a que no hay forma de imputar esos valores nulos los conservaremos y vamos a estudair un poco mas los links debido a que los links de imagen unos sirven y otros nos aparece un mensaje de error y es que se identifico lo siguiente : 
-La estructura base del link debe ser la siguiente : 
-https://m.media-amazon.com/images/I
-Por lo tanto hice un analisis en python para ver que codigo erroneo tenia en la base de los links 
-![image](https://github.com/user-attachments/assets/148691a3-9f10-4aa7-a38b-e3c52a70cb99)
-Despues los links tienen la estrutura:
-51YTmlApiXL._SX300_SY300_QL70_FMwebp_.jpg
-donde lo unico que cambia debe ser el codigo antes de 51YTmlApiXL._SX300_SY300_QL70_FMwebp_.jpg por lo tanto vamos a verificar que todos los links tenga el final de base correcto 
+
+### Análisis de Enlaces de Imagen
+
+Debido a la imposibilidad de imputar los valores nulos, conservaremos estos registros y realizaremos un análisis más detallado de los enlaces de imagen. Algunos enlaces funcionan correctamente, mientras que otros generan un mensaje de error al intentar acceder a ellos. A continuación, se identificaron los problemas:
+
+#### Estructura Base del Enlace
+
+La estructura base del enlace debe ser la siguiente:
+
+**https://m.media-amazon.com/images/I**
+
+Para identificar enlaces incorrectos, se realizó un análisis en Python para encontrar códigos erróneos en la base de los enlaces.
+
+![Estructura Incorrecta](https://github.com/user-attachments/assets/148691a3-9f10-4aa7-a38b-e3c52a70cb99)
+
+#### Estructura Adicional Requerida
+
+Los enlaces también deben tener la siguiente estructura adicional:
+
+**._SX300_SY300**
+
+
+Se buscaron y se identificaron los enlaces que no cumplen con esta estructura.
+
+![Estructura Incorrecta](https://github.com/user-attachments/assets/076dbf4b-740a-4ed7-8cb0-de4a32d3ebe0)
+
+Con estas dos estructuras definidas, podremos corregir todos los enlaces y asegurar que funcionen correctamente.
+
+## Valores Duplicados 
+
 
 
 
