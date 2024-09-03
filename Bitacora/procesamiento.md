@@ -166,6 +166,20 @@ Además, se obtuvo el máximo valor para cada variable: 8 para `user_id` y 9 par
 
 La observación revela que 8 reseñas solo serían significativas en 63 productos. Esto indica que el análisis de reseñas no es significativo para la mayoría de los datos. Debido al problema de tener todas las reseñas agrupadas sin una forma clara de separarlas sin perder información, se decidió no utilizar las variables que contienen información conjunta y, en su lugar, centrarse en las siguientes variables: `img_link`, `product_link`, `product_id`, `rating`, y `rating_count`.
 
+## Valores Nulos 
+
+![image](https://github.com/user-attachments/assets/7a96b00c-418b-4dcd-9c6e-0d9ea1e91cff)
+
+Didbido a que no hay forma de imputar esos valores nulos los conservaremos y vamos a estudair un poco mas los links debido a que los links de imagen unos sirven y otros nos aparece un mensaje de error y es que se identifico lo siguiente : 
+La estructura base del link debe ser la siguiente : 
+https://m.media-amazon.com/images/I
+Por lo tanto hice un analisis en python para ver que codigo erroneo tenia en la base de los links 
+![image](https://github.com/user-attachments/assets/148691a3-9f10-4aa7-a38b-e3c52a70cb99)
+Despues los links tienen la estrutura:
+51YTmlApiXL._SX300_SY300_QL70_FMwebp_.jpg
+donde lo unico que cambia debe ser el codigo antes de 51YTmlApiXL._SX300_SY300_QL70_FMwebp_.jpg por lo tanto vamos a verificar que todos los links tenga el final de base correcto 
+
+
 
 
 
