@@ -104,26 +104,25 @@ El análisis revela que la mayoría de las discrepancias son menores al 10%, lo 
 ### Tipo de dato
  ![image](https://github.com/user-attachments/assets/2e66e4f8-8abd-48fe-92d2-62e4c2c9378d)
    
-   Observamos que tanto `rating` como `rating_count` están en formato `object`. Para poder realizar cálculos y análisis, es necesario convertir estas columnas a un tipo numérico.
+   Observamos que tanto `rating` como `rating_count` están en formato `object`. Para poder realizar cálculos y análisis, es necesario convertir estas columnas a un tipo numérico, para esto primero vamos a visualizar todo que no sea numerico.
 
-2. **Problemas con Símbolos No Válidos**
+
+   - **rating:** Tiene un registro con un valor no válido. Dado que es un único registro y no afecta significativamente el análisis, se eliminará este dato y convertiremos la columna a tipo `float`.
+     
    ![image](https://github.com/user-attachments/assets/df8c41f2-c6ab-4d83-909a-b10fe9030afd)
+
+   * **rating_count:** Utiliza comas como separador de miles, lo cual convierte los valores en caracteres no válidos para conversiones numéricas. Eliminaremos las comas y todo lo que no sea numerico de los valores y convertiremos la columna a tipo `float`.
+     
    ![image](https://github.com/user-attachments/assets/e5cda7b0-f4eb-4897-a527-d86e1cbc5513)
-   
-   - **`rating_count`:** Utiliza comas como separador de miles, lo cual convierte los valores en caracteres no válidos para conversiones numéricas. Se debe eliminar las comas para convertir esta variable a un tipo numérico adecuado.
-   - **`rating`:** Tiene un registro con un valor no válido. Dado que es un único registro y no afecta significativamente el análisis, se eliminará este dato.
 
-#### Solución Propuesta
-
-- **Para `rating_count`:** Eliminaremos las comas y todo lo que no sea numerico de los valores y convertiremos la columna a tipo `float`.
-- **Para `rating`:** Eliminaremos el registro con el dato incorrecto y convertiremos la columna a tipo `float`.
+### Resultados
 
   ![image](https://github.com/user-attachments/assets/d221f566-d5f6-4c5f-b719-22df83d248cd)
 
  ![image](https://github.com/user-attachments/assets/eac5192a-c7ea-4055-ab9f-290fe072360a)
 
 
-### Variables
+## Variables
 
 ![Captura de pantalla 2024-09-02 192936](https://github.com/user-attachments/assets/0aecd7a1-4550-4822-a844-89b999c92ead)
 
@@ -161,7 +160,7 @@ Se crearon dos variables, `user_id_count` y `user_name_count`, para obtener una 
 
 ![Discrepancia en la cantidad de reseñas](https://github.com/user-attachments/assets/7011ae62-a81f-4c5a-9798-9c32797d4c44)
 
-Además, se obtuvo el máximo valor para cada variable: 8 para `user_id` y 9 para `user_name`. Para que 8 reseñas representen al menos el 10% de los datos, es necesario filtrar la cantidad de votos por producto.
+Además, se obtuvo el máximo valor para cada variable: 8 para `user_id` y 9 para `user_name`. Para que 8 reseñas representen al menos el 10% de las votaciones, es necesario filtrar la cantidad de votos por producto.
 
 ![Distribución de votos por producto](https://github.com/user-attachments/assets/c5bf84bb-bd6c-4bf9-b074-86529f74770d)
 
