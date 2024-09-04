@@ -84,14 +84,11 @@ Aunque el valor p indica que el número de votaciones tiene un efecto estadísti
   - El valor p muy alto indica que el coeficiente del porcentaje de descuento no es significativamente diferente de cero. En otras palabras, no hay evidencia suficiente para afirmar que el porcentaje de descuento tiene un efecto significativo en el número de votaciones.
 
 - **R-squared: 0.0000**
-  - Solo el 0% de la variabilidad en el número de votaciones es explicada por el porcentaje de descuento. Esto indica que el modelo no explica en absoluto la variabilidad en el número de votaciones.
-
-- **Adj. R-squared: -0.0007**
-  - El R-cuadrado ajustado, que ajusta el R-cuadrado en función del número de variables, también es muy bajo. Esto confirma que la inclusión del porcentaje de descuento como predictor no mejora el ajuste del modelo. 
-
+  - Indica que el modelo no explica ninguna  variabilidad en el número de votaciones. 
+ 
 ### Conclusión:
 
-La regresión muestra que no hay una asociación significativa entre el porcentaje de descuento y el número de votaciones. El coeficiente del porcentaje de descuento es positivo, pero el valor p alto (0.8798) indica que este efecto no es estadísticamente significativo. Además, el modelo tiene un R-cuadrado muy bajo, lo que sugiere que el porcentaje de descuento no explica la variabilidad en el número de votaciones. Por lo tanto, no hay suficiente evidencia para apoyar la hipótesis de que un mayor descuento está asociado con un mayor número de votaciones. **Hipótesis rechazada**
+La regresión muestra que no hay una asociación significativa entre el porcentaje de descuento y el número de votaciones. El coeficiente del porcentaje de descuento es positivo, pero el valor p alto (0.8798) indica que este efecto no es estadísticamente significativo. Además, el modelo tiene un R-cuadrado en 0, esto significa que el porcentaje de descuento no contribuye en absoluto a explicar las diferencias en el número de votaciones. Por lo tanto, no hay suficiente evidencia para apoyar la hipótesis de que un mayor descuento está asociado con un mayor número de votaciones. **Hipótesis rechazada**
 
 
 # Regresión Lineal General 
