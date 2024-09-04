@@ -5,12 +5,13 @@ Amazon es una de las empresas tecnológicas más grandes del mundo, con operacio
 
 En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/15wCrW52MEIh6KtVdiW3ia1Mb7is0JPxY/view)  que contiene más de 1,000 calificaciones y reseñas de productos disponibles en Amazon, extraído de un repositorio en Kaggle. 
 ## Objetivos
-**1.** Realizar una regresión lineal para modelar la influencia de diversas variables en la puntuación de los productos.
 
-**2.** Responder las siguientes hipótesis: 
+**1.** Responder las siguientes hipótesis: 
 * **Hipótesis 1:** ¿Los productos con mayores descuentos obtienen mejores calificaciones?.
 * **Hipótesis 2:** ¿Los productos con más votaciones tienen mejores calificaciones?
 * **Hipótesis 3:** ¿Un mayor descuento está asociado con un mayor número de votaciones del producto?
+
+**2.** Realizar una regresión lineal para modelar la influencia de diversas variables en la puntuación de los productos.
 
 **3.** Encontrar hallazgos 
 
