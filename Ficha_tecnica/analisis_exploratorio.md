@@ -69,7 +69,7 @@ Este análisis nos sirve como base para validar o refutar las hipótesis plantea
   La correlación positiva extremadamente baja de 0.1 entre el número de votaciones y la calificación sugiere que no hay una diferencia significativa en la calificación basada en la cantidad de votaciones. Es decir, tanto los productos con muchas como con pocas votaciones pueden tener calificaciones altas o bajas.
 
 * **3: ¿Un mayor descuento está asociado con un mayor número de votaciones del producto?**  
-  La correlación de -0.23 entre el descuento y el número de votaciones indica una relación inversa. Esto sugiere que un aumento en el descuento está asociado con una ligera disminución en el número de votaciones, aunque la relación es débil y el efecto es mínimo.
+  No existe la correlación  entre el descuento y el número de votaciones dado que vemos un resultado de 0.00
 
   
 Para asegurar la validez de los resultados obtenidos, procederemos a aplicar técnicas adicionales de análisis, como la regresión lineal y pruebas de significancia. Estas técnicas permitirán una evaluación más rigurosa de nuestras hipótesis y ayudarán a confirmar o refutar las observaciones preliminares.
