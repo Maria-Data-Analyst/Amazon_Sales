@@ -131,7 +131,3 @@ El RMSE indica que, en promedio, las predicciones del modelo se desvían en apro
 **Conclusión**
 
 El análisis del modelo de regresión lineal muestra que las predicciones están relativamente cerca de los valores reales, pero no son exactas. Las métricas del modelo revelan un Error Cuadrático Medio (MSE) de 0.0646 y una Raíz del Error Cuadrático Medio (RMSE) de 0.2542, lo que indica que, en promedio, las predicciones se desvían en aproximadamente 0.25 unidades de los valores reales, en un rango de 1 a 5. Aunque el error es moderado, el modelo presenta indicios de sobreajuste, ya que el score en el conjunto de entrenamiento es significativamente mayor que en el de prueba. Los bajos valores de R² en ambos conjuntos sugieren que el modelo no está capturando bien la variabilidad en los datos. En general, el modelo tiene una precisión moderada, pero se recomienda ajustar o explorar otras técnicas para mejorar el desempeño y la generalización.
-
-Con esto podemos asegurar que las variables con las uqe contamos en la base de datos no son suficiente para determinar el rating por lo tanto 
-
-
