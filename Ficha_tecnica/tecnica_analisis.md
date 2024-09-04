@@ -1,10 +1,11 @@
 # Regresión Lineal
 Para corroborar la validacion de las hipotesis en el apartado anterior se llevara a cabo tres regresiones lineales para ver en que medida estas variables se estan afectando. 
-* **1 Hipótesis: ¿Los productos con mayores descuentos obtienen mejores calificaciones?**
+
+## 1. Hipótesis: ¿Los productos con mayores descuentos obtienen mejores calificaciones?
   
   ![image](https://github.com/user-attachments/assets/28a96e49-140d-4be6-9b5e-082361a919f9)
 
-## Resumen del Modelo
+### Resumen del Modelo
 
 - **Intercepto (const):** 4.1976  
   El rating estimado es 4.1976 cuando el porcentaje de descuento es 0. Este valor representa el punto de partida del rating sin descuento.
@@ -28,13 +29,13 @@ Para corroborar la validacion de las hipotesis en el apartado anterior se llevar
   El R-cuadrado ajustado, que tiene en cuenta el número de variables en el modelo. En este caso, es similar al R-cuadrado, indicando que la inclusión de `discount_percentage` como única variable predictora no mejora mucho el ajuste del modelo.
 
 **Conclusión:**  
-La evidencia sugiere que el porcentaje de descuento tiene un efecto estadísticamente significativo pero muy pequeño en el rating. Dado que el modelo no explica bien la variabilidad en las calificaciones, es probable que otros factores también influyan en el rating de los productos, lo que lleva a la conclusión de que la hipótesis de que mayores descuentos conducen a mejores calificaciones no se sostiene de manera significativa en este análisis, por lo tanto se **rechaza**
+El análisis muestra que el porcentaje de descuento tiene un efecto estadísticamente significativo en el rating, aunque el impacto es muy pequeño. El coeficiente negativo sugiere que a mayor porcentaje de descuento, el rating tiende a disminuir. Sin embargo, el modelo tiene una capacidad limitada para explicar la variabilidad en las calificaciones. Dado que el efecto es sutil y el modelo no captura bien las diferencias en el rating, la hipótesis de que los mayores descuentos conducen a mejores calificaciones no se sostiene de manera significativa en este caso. **Hipótesis rechazada**
 
-* **2 Hipótesis: ¿Los productos con más votaciones tienen mejores calificaciones?**
+## 2. Hipótesis: ¿Los productos con más votaciones tienen mejores calificaciones?**
 
 ![image](https://github.com/user-attachments/assets/9a54b162-ec78-43d1-9d82-f8a36324d37d)
 
-**Resumen del Modelo:**
+### Resumen del Modelo:
 
 - **Intercepto (const):** 4.0794  
   Este es el rating estimado cuando el número de votaciones es 0. En este caso, el rating promedio es de 4.0794 cuando no hay votaciones.
@@ -59,19 +60,49 @@ La evidencia sugiere que el porcentaje de descuento tiene un efecto estadística
 
 **Conclusión:**
 
-Aunque el valor p indica que el número de votaciones tiene un efecto estadísticamente significativo en el rating, el coeficiente es extremadamente pequeño y el R-squared es muy bajo. Esto sugiere que el número de votaciones tiene un impacto mínimo en el rating y que el modelo no explica bien la variabilidad en las calificaciones. Por lo tanto, la hipótesis de que los productos con más votaciones tienen mejores calificaciones no está respaldada por los datos, ya que el impacto de las votaciones en el rating es casi insignificante. Hipótesis  **Rechazada**
+Aunque el valor p indica que el número de votaciones tiene un efecto estadísticamente significativo en el rating, el coeficiente es extremadamente pequeño y el R-squared es muy bajo. Esto sugiere que el número de votaciones tiene un impacto mínimo en el rating y que el modelo no explica bien la variabilidad en las calificaciones. Por lo tanto, la hipótesis de que los productos con más votaciones tienen mejores calificaciones no está respaldada por los datos, ya que el impacto de las votaciones en el rating es casi insignificante.  **Hipótesis rechazada**
+
+## 3. Hipótesis: ¿Un mayor descuento está asociado con un mayor número de votaciones del producto?
+
+![image](https://github.com/user-attachments/assets/ced12398-6bb1-4c7c-a99c-928279be4531)
+
+### Resumen del Modelo 
+
+- **Intercepto (const): 17261.3038**
+  - El número estimado de votaciones cuando el porcentaje de descuento es 0 es 17,261.30. Este valor es el punto de partida del modelo.
+
+- **Coeficiente (discount_percentage): 8.1216**
+  - Por cada unidad adicional en el porcentaje de descuento, el número de votaciones aumenta en 8.1216. Aunque este coeficiente es positivo, el valor p asociado indica que no es estadísticamente significativo (p = 0.8798).
+
+- **Error estándar (const): 2755.4788**
+  - Mide la precisión de la estimación del intercepto. Un error estándar alto indica que el intercepto no está estimado con gran precisión.
+
+- **Error estándar (discount_percentage): 53.6915**
+  - Mide la precisión del coeficiente del porcentaje de descuento. Un error estándar alto para el coeficiente sugiere que la estimación del efecto del porcentaje de descuento en el número de votaciones es imprecisa.
+
+- **Valor p (discount_percentage): 0.8798**
+  - El valor p muy alto indica que el coeficiente del porcentaje de descuento no es significativamente diferente de cero. En otras palabras, no hay evidencia suficiente para afirmar que el porcentaje de descuento tiene un efecto significativo en el número de votaciones.
+
+- **R-squared: 0.0000**
+  - Solo el 0% de la variabilidad en el número de votaciones es explicada por el porcentaje de descuento. Esto indica que el modelo no explica en absoluto la variabilidad en el número de votaciones.
+
+- **Adj. R-squared: -0.0007**
+  - El R-cuadrado ajustado, que ajusta el R-cuadrado en función del número de variables, también es muy bajo. Esto confirma que la inclusión del porcentaje de descuento como predictor no mejora el ajuste del modelo. 
+
+### Conclusión:
+
+La regresión muestra que no hay una asociación significativa entre el porcentaje de descuento y el número de votaciones. El coeficiente del porcentaje de descuento es positivo, pero el valor p alto (0.8798) indica que este efecto no es estadísticamente significativo. Además, el modelo tiene un R-cuadrado muy bajo, lo que sugiere que el porcentaje de descuento no explica la variabilidad en el número de votaciones. Por lo tanto, no hay suficiente evidencia para apoyar la hipótesis de que un mayor descuento está asociado con un mayor número de votaciones. **Hipótesis rechazada**
 
 
+# Regresión Lineal General 
 
-# Regresión Lineal
+Inicialmente, planteamos dos hipótesis sobre el impacto del porcentaje de descuento y la cantidad de votaciones en el rating de los productos. Sin embargo, al realizar las regresiones lineales, observamos que el modelo no mostraba un ajuste adecuado y podría beneficiarse de la inclusión de más variables.
 
-Inicialmente, planteamos dos hipótesis sobre el impacto positivo del porcentaje de descuento y la cantidad de votaciones en el rating. Sin embargo, al analizar las correlaciones, descubrimos que eran débiles y, en algunos casos, inversas.
+En consecuencia, reformulamos nuestra hipótesis de manera más amplia: ¿Está el rating influenciado por las variables disponibles que tenemos en la abse de datos? Nuestro objetivo es determinar si estas variables tienen un impacto significativo en el rating, lo cual nos permitirá evaluar su relevancia en la predicción del rating.
 
-Por lo tanto, reformulamos nuestra hipótesis de manera más amplia: ¿Está el rating influenciado por las variables disponibles? Nuestro objetivo es determinar si estas variables tienen un impacto significativo en el rating, lo que permitirá evaluar su valor en el modelo predictivo.
+Para investigar esto, construimos un modelo de regresión lineal utilizando variables numéricas relevantes. Además, transformamos las principales categorías de la variable main_category en variables dummy para incluirlas en el análisis.
 
-Para investigar esto, construimos un modelo de regresión lineal. Seleccionamos las variables numéricas relevantes y transformamos las principales categorías de la variable `main_category` en variables dummy para incluirlas en el análisis.
-
-Ahora, revisaremos nuevamente la correlación de todas las variables utilizadas en el modelo con el rating.
+Ahora, procederemos a revisar la correlación de todas las variables utilizadas en el modelo con el rating para comprender mejor sus relaciones.
 
 ![Correlación de Variables](https://github.com/user-attachments/assets/963878a1-480a-43cf-bfda-15cb96864b2b)
 
