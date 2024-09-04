@@ -8,9 +8,11 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
 **1.** Realizar una regresión lineal para modelar la influencia de diversas variables en la puntuación de los productos.
 
 **2.** Responder las siguientes hipótesis: 
-* **Hipótesis 1:** A mayor descuento, mejor será la calificación del producto.
-* **Hipótesis 2:** A mayor número de evaluaciones, mejor será la calificación del producto.
-* **Hipótesis 3:** Un mayor descuento está asociado con un mayor número de evaluaciones del producto
+* **Hipótesis 1:** ¿Los productos con mayores descuentos obtienen mejores calificaciones?.
+* **Hipótesis 2:** ¿Los productos con más votaciones tienen mejores calificaciones?
+* **Hipótesis 3:** ¿Un mayor descuento está asociado con un mayor número de votaciones del producto?
+
+**3.** Encontrar hallazgos 
 
 
 
@@ -18,43 +20,22 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
 
 <details>
   <summary>Ficha Técnica</summary>
-    Toma de decisiones y conclusiones
-  
-  1. [**Procesamiento y Preparación de la Base de Datos**](https://github.com/Maria-Data-Analyst/riesgo_relativo/blob/Consultas-Query/Ficha_tecnica/procesamiento.md)
-     
-  2. [**Análisis Exploratorio de Datos**](https://github.com/Maria-Data-Analyst/riesgo_relativo/blob/Consultas-Query/Ficha_tecnica/AED.md)
-     
-  3.  [**Técnica de análisis**](https://github.com/Maria-Data-Analyst/riesgo_relativo/blob/Consultas-Query/Ficha_tecnica/tecnica_analisis.md)
-
-
-
-     
-</details>
-
-
-
- <details>
-  <summary>Bitacora</summary>
-     Código y visualización
    
-  1. [**Procesamiento y Preparación de la Base de Datos**](https://github.com/Maria-Data-Analyst/riesgo_relativo/blob/Consultas-Query/Bitacora/procesamiento.md)
-     - Limpieza de datos.
-     - Transformación y estructuración de la información.
+  
+  1. [**Procesamiento y Preparación de la Base de Datos**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/procesamiento.md)
      
-  2. [**Análisis Exploratorio de Datos**](https://github.com/Maria-Data-Analyst/riesgo_relativo/blob/Consultas-Query/Bitacora/AED.md)
-     - Exploración de tendencias y patrones.
-     - Identificación de variables relevantes.
-       
-  3. [**Aplicación de Técnicas de Análisis**](https://github.com/Maria-Data-Analyst/riesgo_relativo/blob/Consultas-Query/Bitacora/tecnica_analisis.md)
-     - Riesgo relativo
-     - Hito2. Score crediticio
-     - Hito3. Regresión logística
+  2. [**Análisis Exploratorio de Datos**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/analisis_exploratorio.md)
+     
+  3.  [**Técnica de análisis**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/tecnica_analisis.md)
+     
+  4.  [**Presentación**]()
+
+  5.  [**Dashboard**]()
+
+
+
      
 </details>
-
-* [**Presentación**](https://docs.google.com/presentation/d/1cDMneL7eKBrhgwDIdBpOPCKwlxaE3G1_UiqOo-2WpOc/edit?usp=sharing)
-  
-* [**Dashboard**](https://lookerstudio.google.com/reporting/de0d90e8-c84e-4ac2-a808-8323ede69367)
 
 ### Herramientas y Lenguajes 
 - BigQuery
