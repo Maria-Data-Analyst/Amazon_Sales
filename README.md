@@ -44,3 +44,8 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
 - Looker Studio
 - Python
 - Google Colab
+
+
+### Analistas 
+- Julieta Salto
+- María Cortés 
