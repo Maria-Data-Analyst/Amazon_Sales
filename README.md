@@ -27,7 +27,7 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
      
   2. [**Análisis Exploratorio de Datos**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/analisis_exploratorio.md)
      
-  3.  [**Técnica de análisis**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/tecnica_analisis.md)
+  3.  [**Técnica de análisis y conclusiones**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/tecnica_analisis.md)
      
   4.  [**Presentación**](https://docs.google.com/presentation/d/1z2tFKO-xrRwrsVrxCDtJlnilS8RLYR36ga9IVbYNBOE/edit?usp=sharing)
 
