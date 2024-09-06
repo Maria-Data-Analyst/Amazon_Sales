@@ -29,9 +29,9 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
      
   3.  [**Técnica de análisis**](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/tecnica_analisis.md)
      
-  4.  [**Presentación**]()
+  4.  [**Presentación**](https://docs.google.com/presentation/d/1z2tFKO-xrRwrsVrxCDtJlnilS8RLYR36ga9IVbYNBOE/edit?usp=sharing)
 
-  5.  [**Dashboard**]()
+  5.  [**Dashboard**](https://lookerstudio.google.com/reporting/be08781d-a2ff-486f-8240-56c7f516996a)
 
 
 
