@@ -235,5 +235,5 @@ Primero, descargamos los dos archivos limpios desde Google Colab y los subimos a
 
 [Análisis Exploratorio](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/analisis_exploratorio.md)
 
-En el siguiente Notebook encontraras todos los procesos de limpieza realizados [Procesamiento con Python](
+En el siguiente Notebook encontraras todos los procesos de limpieza realizados [Procesamiento con Python](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Procesamiento_amazon.ipynb)
 
