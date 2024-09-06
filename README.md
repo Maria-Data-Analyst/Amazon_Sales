@@ -13,7 +13,7 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
 
 **2.** Realizar una regresión lineal para modelar la influencia de diversas variables en la puntuación de los productos.
 
-**3.** Encontrar hallazgos 
+
 
 
 
