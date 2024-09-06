@@ -75,3 +75,5 @@ Este análisis nos sirve como base para validar o refutar las hipótesis plantea
 Para asegurar la validez de los resultados obtenidos, procederemos a aplicar técnicas adicionales de análisis, como la regresión lineal y pruebas de significancia. Estas técnicas permitirán una evaluación más rigurosa de nuestras hipótesis y ayudarán a confirmar o refutar las observaciones preliminares.
 
 [Tecnica de Análisis](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/Ficha_tecnica/tecnica_analisis.md)
+
+Para visualizar todo el análisis exploratorio hecho en Google Colab puede ver el siguiente Notebook: [Análisis exploratorio](https://github.com/Maria-Data-Analyst/Amazon_Sales/blob/Consultas-Query/analisis_exploratorio_Amazon.ipynb)
