@@ -1,6 +1,8 @@
-# Proyecto Amazon Sales
+# Proyecto DataLab
 
 ## Introducción
+En Datalab, una empresa de consultoría innovadora especializada en análisis de datos, se dedican a proporcionar soluciones analíticas de vanguardia. Nos han ofrecido la oportunidad de demostrar nuestras habilidades en este campo analizando el conjunto de datos de ventas de Amazon, que contiene más de 1.000 calificaciones de productos disponibles en la plataforma.
+
 Amazon es una de las empresas tecnológicas más grandes del mundo, con operaciones multinacionales que abarcan una amplia gama de sectores, siendo el comercio electrónico uno de sus principales pilares. La compañía gestiona un vasto inventario, encargándose de todo el proceso comercial, desde la fijación de precios hasta la entrega, el servicio al cliente y las devoluciones.
 
 En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/15wCrW52MEIh6KtVdiW3ia1Mb7is0JPxY/view)  que contiene más de 1,000 calificaciones y reseñas de productos disponibles en Amazon, extraído de un repositorio en Kaggle. 
@@ -11,11 +13,7 @@ En este proyecto, trabajaremos con un [dataset](https://drive.google.com/file/d/
 * **Hipótesis 2:** ¿Los productos con más votaciones tienen mejores calificaciones?
 * **Hipótesis 3:** ¿Un mayor descuento está asociado con un mayor número de votaciones del producto?
 
-**2.** Realizar una regresión lineal para modelar la influencia de diversas variables en la puntuación de los productos.
-
-
-
-
+**2.** Realizar correlación y regresión lineal para modelar la influencia de diversas variables en la puntuación de los productos.
 
 ### Índice
 
